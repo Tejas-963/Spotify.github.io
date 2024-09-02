@@ -600,7 +600,7 @@ a{
     line-height: 3px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 777px) {
     .left{
         height: 95vh;
         min-width: auto;
@@ -689,9 +689,8 @@ a{
     }
 
     .right{
-        width: 96vw;
+        width: 97vw;
     }
-
 
     .arrows{
         padding: 18px 0;
@@ -723,19 +722,15 @@ a{
 
 @media (max-width: 486px) {
 
+    .spotifyPlaylist{
+        text-align: center;
+    }
+
     .albums{
         row-gap: 45px;
     }
-    
+
     .content{
-        width: 345px;
-    }
-
-    .content h3{
-        font-size: 36px;
-    }
-
-    .content p{
-        font-size: 16px;
+        width: 264px;
     }
 }
