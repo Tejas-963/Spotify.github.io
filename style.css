@@ -72,6 +72,7 @@ a{
 .right{
     background-color: #121212;
     width: 100%;
+    height: 100%;
     border-radius: 9px;
     max-height: 103vh;
     overflow: scroll;
@@ -462,7 +463,7 @@ a{
 }
 
 .content{
-    width: 192px;
+    width: 189px;
 }
 
 .content >img{
