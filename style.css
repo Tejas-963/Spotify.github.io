@@ -62,11 +62,9 @@ a{
 }
 
 .bound2{
-    height: 96vh;
-    position: absolute;
-    bottom: 12px;
-    right: 9px;
-    left: 299px;
+    width: 100%;
+    height: 97vh;
+    position: relative;
     overflow: hidden;
     border-radius: 9px;
 }
@@ -78,6 +76,7 @@ a{
     max-height: 103vh;
     overflow: scroll;
     scroll-behavior: smooth;
+    position: absolute;
 }
 
 
@@ -686,15 +685,6 @@ a{
         /* height: 97vh; */
         overflow: hidden;
         border-radius: 9px;
-    }
-
-    .bound2{
-        /* height: 97vh; */
-        /* width: %; */
-        /* top: px; */
-        bottom: 12px;
-        right: 7px;
-        left: 6px;
     }
 
     .right{
