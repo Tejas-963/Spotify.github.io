@@ -689,7 +689,7 @@ a{
     }
 
     .right{
-        width: 98vw;
+        width: 96vw;
     }
 
 
@@ -719,4 +719,23 @@ a{
         justify-content: center;
     }
 
+}
+
+@media (max-width: 486px) {
+
+    .albums{
+        row-gap: 45px;
+    }
+    
+    .content{
+        width: 345px;
+    }
+
+    .content h3{
+        font-size: 36px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
 }
