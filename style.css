@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
-    font-family: poppins;
+    /* font-family: sans-serif ; */
 }
 
 :root{
@@ -37,33 +35,20 @@ a{
     color: var(--tagsCl);
 }
 
-.left{
-    min-width: 284px;
-    height: 95vh;
-    overflow: hidden;
-}
-
 .side{
-    width: 284px;
-    height: 100%;
-}
-
-.above{
-    width: 100%;
+    width: 18rem;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .close{
     display: none;
 }
 
-.bound{
-    height: 96vh;
-    overflow: hidden;
-}
-
-.bound2{
+.boundary{
     width: 100%;
-    height: 97vh;
+    height: 98vh;
     position: relative;
     overflow: hidden;
     border-radius: 9px;
@@ -72,7 +57,7 @@ a{
 .right{
     background-color: #121212;
     width: 100%;
-    height: 100%;
+    height: 105%;
     border-radius: 9px;
     max-height: 103vh;
     overflow: scroll;
@@ -167,18 +152,9 @@ a{
     background-color: black;
 }
 
-.down{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 84vh;
+.library{
     background-color: #121212;
     border-radius: 9px;
-    position: relative;
-    overflow: hidden;
-}
-
-.library{
     padding-top: 18px;
     padding-bottom: 27px;
     display: flex;
@@ -231,8 +207,11 @@ a{
 }
 
 .cards{
-    overflow: scroll;
-    height: 35vh;
+    background-color: #121212;
+    border-radius: 9px;
+    min-height: 90px;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .cards::-webkit-scrollbar {
@@ -300,17 +279,15 @@ a{
 }
 
 .crbtn:hover{
-    font-size: 13px;
+    transform: scale(1.04);
 }
-
 
 .about{
     width: 284px;
     color: #b3b3b3;
     background-color: #121212;
     border-radius: 9px;
-    position: absolute;
-    bottom: 9px;
+    margin-top: auto;
 }
 
 .tag{
@@ -352,7 +329,7 @@ a{
 }
 
 .lbtn:hover{
-    font-size: 11px;
+    transform: scale(1.04);
     border: 1.2px solid white;
 }
 
@@ -361,9 +338,11 @@ a{
     justify-content: space-between;
     align-items: center;
     height: 69px;
-    position: relative;
+    position: sticky;
     top: 0px;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgb(0 0 0 / 81%);
+    backdrop-filter: blur(27px);
+    z-index: 3;
 }
 
 .ham{
@@ -424,7 +403,7 @@ a{
 }
 
 .btn:hover{
-    font-size: 17px;
+    transform: scale(1.04);
 }
 
 .cp{
@@ -460,6 +439,7 @@ a{
     padding: 9px;
     border-radius: 9px;
     position: relative;
+    transition: all 300ms ease;
 }
 
 .content{
@@ -492,7 +472,7 @@ a{
 }
 
 .albums .album:hover{
-    transform: translateZ(18px);
+    transform: scale(1.05);
     background-color: #171717;
 }
 
@@ -601,34 +581,35 @@ a{
 }
 
 @media (max-width: 777px) {
-    .left{
-        height: 95vh;
+    .side{
+        height: 97vh;
         min-width: auto;
-        width: 75%;
+        width: 288px;
         padding: 9px;
         position: absolute;
         left: -150%;
         transition: all .3s;
-        z-index: 1;
+        z-index: 6;
         background-color: black;
         overflow: scroll;
+        overflow-x: hidden;
     }
 
-    .left::-webkit-scrollbar {
+    .side::-webkit-scrollbar {
         width: 6px; 
         padding: 3px;
     }
     
-    .left::-webkit-scrollbar-thumb {
+    .side::-webkit-scrollbar-thumb {
         border-radius: 9px;
     }
 
-    .left::-webkit-scrollbar-corner {
+    .side::-webkit-scrollbar-corner {
         background: black; 
         border-radius: 63px;
     }
 
-    .side{
+    /* .side{
         width: 100%;
         height: 99%;
         display: flex;
@@ -637,31 +618,8 @@ a{
         justify-content: center;
         background-color: #121212;
         border-radius: 9px;
-    }
-
-    .down{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        background-color: #121212;
-        border-radius: 9px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    /* .mg{
-        height: auto;
     } */
 
-    /* .cards{
-        height: auto;
-    } */
-
-    .about{
-        width: 100%;
-        position: relative;
-        padding: 0;
-    }
 
     .close{
         display: block;
@@ -707,7 +665,7 @@ a{
     }
 
     .siLog .sign:hover, .login:hover{
-        font-size: 15px;
+        transform: scale(1.04);
     }
 
     .albums{
