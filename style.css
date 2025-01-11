@@ -694,4 +694,8 @@ a{
         row-gap: 45px;
     }
 
+    .album{
+        width: 18rem;
+    }
+
 }
