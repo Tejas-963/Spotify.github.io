@@ -588,7 +588,7 @@ a{
 
 @media (max-width: 777px) {
     .side{
-        height: 96vh;
+        height: 96dvh;
         min-width: auto;
         width: 288px;
         padding: 9px;
@@ -653,7 +653,7 @@ a{
     }
 
     .right{
-        width: 97vw;
+        width: 97dvw;
     }
 
     .arrows{
